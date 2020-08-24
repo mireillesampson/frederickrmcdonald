@@ -360,6 +360,11 @@ textarea {
      color: #80543b;
    }
 
+   aside i {
+     color: #80543b;
+     font-size: 3em;
+   }
+
 
       /* PAINTINGS-HIGHLIGHTS */
 
@@ -381,6 +386,13 @@ textarea {
         /*filter: drop-shadow(3px 3px 3px #410802);*/
       }
 
+      .diptych {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+      }
+
 
 
       /*--.reviews figure {
@@ -393,7 +405,7 @@ textarea {
    /* FEATURES AREA */
 
    .features {
-     background: url('../img/drying-fish-warm.jpg') center no-repeat #333;
+     background: url('../img/drying-fish.jpg') center no-repeat #333;
      background-size: cover;
      display: flex;
      justify-content: center;
