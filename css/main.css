@@ -169,7 +169,7 @@ textarea {
    }
 
    .peach-bkgd {
-     background-color: #d08c60;
+     background-color: #d99973;
    }
 
    .orange-bkgd {
@@ -288,11 +288,11 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: #d08c60;
+     background-color: #d99973;
      border-radius: 50%;
      width: 40px;
      height: 40px;
-     filter: drop-shadow(2px 2px 2px #410802);
+     /*filter: drop-shadow(2px 2px 2px #410802);*/
    }
 
    footer .social-icons p i {
@@ -441,7 +441,70 @@ textarea {
      margin-bottom: 40px;
    }
 
+/* ==========================================================================
+    POETRY PAGE
+========================================================================== */
 
+#t-o-contents {
+  color:#410802;
+  background-color: #ffffff;
+}
+
+#t-o-contents ul li a {
+  color: #410802;
+}
+
+#two-ravens {
+  color: #80543b;
+  background-color: #ffffff;
+
+}
+
+#names {
+  background-color: #af6237;
+}
+
+#best {
+  color: #af6237;
+  background-color: #ffffff;
+}
+
+#kitchen {
+  background-color: #80543b;
+  color: #ffffff;
+}
+
+#jelly-jar {
+  background-color: #ffffff;
+  color: #80543b;
+}
+#darkness {
+  background-color: #997b66;
+  color: #ffffff;
+}
+
+#next-door {
+  background-color: #ffffff;
+  color: #80543b;
+}
+
+#lights {
+  color: #d99973;
+  background-color: #410802;
+}
+
+#request {
+  background-color: #ffffff;
+  color: #80543b;
+}
+
+   .poetry article {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+     color: #80543b;
+   }
 
 
 
