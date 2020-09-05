@@ -164,17 +164,22 @@ textarea {
      background-color: #ffffff;
    }
 
+
    .white-bkgd {
      background-color: #ffffff;
-   }
-
-   .peach-bkgd {
-     background-color: #d99973;
    }
 
    .orange-bkgd {
      background-color: #af6237;
    }
+
+/*
+   .peach-bkgd {
+     background-color: #e1ac86;
+   }
+
+   a lighter version of the peach
+   for light text on dark bkgd: e6b892
 
    .lt-brn-bkgd {
      background-color: #997b66;
@@ -187,7 +192,7 @@ textarea {
    .dk.brn.bkgd {
      background-color: #410802;
    }
-
+*/
 
 
    /*--------------BASE HEADER - FOOTER STYLES -------------*/
@@ -327,11 +332,15 @@ textarea {
 
    .hero-area {
      background-color: #80543b;
-     background-size: cover;
+     /*background-size: cover;*/
      /*min-height: 598px;*/
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
+   }
+
+   .hero-area .content-wrapper {
+     margin: 30px 0;
    }
 
    /*.hero-area figure {
@@ -432,7 +441,7 @@ textarea {
    .features p {
      text-align: center;
      margin: 0;
-     font-weight: 400;
+     font-weight: 500;
    }
 
 
@@ -445,66 +454,124 @@ textarea {
     POETRY PAGE
 ========================================================================== */
 
+
+
 #t-o-contents {
-  color:#410802;
+  color: #80543B;
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#t-o-contents h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  margin-bottom: 40px;
 }
 
 #t-o-contents ul li a {
+  color: #80543B;
+  line-height: 1.8;
+}
+
+#books {
+  background-color: #d99973;
   color: #410802;
+}
+
+#books h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  margin-bottom: 40px;
+}
+
+#books .divider {
+  background-color: #410802;
+}
+
+.poems h3 {
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 #two-ravens {
   color: #80543b;
   background-color: #ffffff;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #names {
-  background-color: #af6237;
+  /*background-color: #af6237;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/drying-fish.jpg') center no-repeat #333;
+  background-size: cover;
+  font-weight: 500;
 }
 
 #best {
-  color: #af6237;
+  color: #80543b;
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #kitchen {
   background-color: #80543b;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #jelly-jar {
   background-color: #ffffff;
   color: #80543b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #darkness {
-  background-color: #997b66;
+  background-color: #af6237;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #next-door {
   background-color: #ffffff;
   color: #80543b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #lights {
-  color: #d99973;
+  color: #e6b892;
   background-color: #410802;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #request {
   background-color: #ffffff;
-  color: #80543b;
+  color: #80543B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-   .poetry article {
+/*   .poetry article {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-flow: row wrap;
      color: #80543b;
-   }
+   } */
 
 
 
