@@ -124,12 +124,18 @@ textarea {
      margin: 0;
    }
 
-   h3,
+   h3 {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 400;
+     font-size: 1.3em;
+     margin: 20px 0;
+   }
+
    h4 {
      font-family: 'Raleway', sans-serif;
      font-weight: 400;
      font-size: 1.125em;
-     margin: 20px 0;
+     margin: 15px 0;
    }
 
    p {
@@ -164,9 +170,9 @@ textarea {
      background-color: #ffffff;
    }
 
-   .right-align {
+  /* .right-align {
      align-self: flex-end;
-   }
+   } */
 
    .white-bkgd {
      background-color: #ffffff;
@@ -381,6 +387,8 @@ textarea {
      color: #80543b;
    }
 
+
+
       /* PAINTINGS-HIGHLIGHTS */
 
       .paintings-highlights {
@@ -398,8 +406,8 @@ textarea {
       .paintings-highlights i {
         font-size: 3em;
         padding-top: 20px;
-        /*filter: drop-shadow(3px 3px 3px #410802);*/
       }
+
 
       .diptych {
         display: flex;
@@ -428,13 +436,13 @@ textarea {
    }
 
    .features h2 {
-     margin-bottom: 40px;
+     margin-bottom: 60px;
      font-weight: 500;
      text-align: center;
    }
 
    .features article {
-     width: 75%;
+     width: 100%;
      margin: 30px 0;
    }
 
@@ -509,10 +517,16 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5%;
-  width: 140px;
+  border-radius: 15px;
+  width: 160px;
   height: 40px;
   margin: 30px 0;
+}
+
+#books i {
+  font-size: 1.25em;
+  padding-left: 10px;
+  color: #ffffff;
 }
 
 #books h2 {
@@ -656,7 +670,68 @@ textarea {
    } */
 
 
+/* ==========================================================================
+  TABLET STYLES
+  ========================================================================== */
 
+@media only screen and (min-width: 768px) {
+  /*General Styles*/
+  /*.content-wrapper {
+    max-width: 640px;
+    margin:
+  } */
+
+  h1 {
+    font-size: 2.8em;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 2.15em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+
+  /*Homepage Features*/
+
+  .hero-area {
+    display: flex;
+  }
+
+  .hero-area .intro {
+    flex: 1;
+    padding-left: 10px;
+  }
+
+  .hero-area figure {
+    flex: 1;
+  }
+
+  .features .features-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: start;
+  }
+
+  .features article {
+    width: 95%;
+    margin: 30px 0;
+  }
+
+  /*Poetry Page*/
+
+
+}
+/* ==========================================================================
+    DESKTOP STYLES
+  ========================================================================== */
 
 
 /* ==========================================================================
