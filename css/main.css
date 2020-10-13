@@ -100,8 +100,8 @@ textarea {
      font-family: 'Raleway', sans-serif;
      font-weight: 400;
      font-size: 1em;
-     text-align: left;
      color: #ffffff;
+     text-align: left;
    }
 
    ul,
@@ -117,6 +117,10 @@ textarea {
      color: #ffffff;
    }
 
+   a :hover {
+     color: powderblue;
+   }
+
    h2 {
      font-family: 'Raleway', sans-serif;
      font-size: 1.5em;
@@ -127,15 +131,15 @@ textarea {
    h3 {
      font-family: 'Raleway', sans-serif;
      font-weight: 400;
-     font-size: 1.3em;
-     margin: 20px 0;
+     font-size: 1.35em;
+     margin: 10px 0;
    }
 
    h4 {
      font-family: 'Raleway', sans-serif;
      font-weight: 400;
      font-size: 1.125em;
-     margin: 15px 0;
+     margin: 10px 0;
    }
 
    p {
@@ -144,7 +148,8 @@ textarea {
    }
 
    img {
-     width: 100%;
+     /*max-height: 85vh;*/
+     max-width: 100%;
    }
 
    figure {
@@ -159,7 +164,7 @@ textarea {
    /*-----------UTILITIES---------*/
 
    .content-wrapper {
-     width: 90%;
+     width: 95%;
      margin: 50px 0;
    }
 
@@ -170,38 +175,19 @@ textarea {
      background-color: #ffffff;
    }
 
-  /* .right-align {
-     align-self: flex-end;
-   } */
-
-   .white-bkgd {
-     background-color: #ffffff;
+   .right-small {
+     justify-self: end;
+     align-self: end;
    }
 
-   .orange-bkgd {
-     background-color: #af6237;
+   .right-small i {
+     font-size: 2.5rem;
+     padding: 10px 0;
    }
 
-/*
-   .peach-bkgd {
-     background-color: #e1ac86;
+   .small-print {
+     font-size: 0.8rem;
    }
-
-   a lighter version of the peach
-   for light text on dark bkgd: e6b892
-
-   .lt-brn-bkgd {
-     background-color: #997b66;
-   }
-
-   .med-brn-bkgd {
-     background-color: #80543b;
-   }
-
-   .dk.brn.bkgd {
-     background-color: #410802;
-   }
-*/
 
 
    /*--------------BASE HEADER - FOOTER STYLES -------------*/
@@ -241,13 +227,6 @@ textarea {
      margin: 0;
    }
 
-  /*header figure {
-       width: 60%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       flex-flow: row wrap;
-   }*/
 
    header nav {
      display: flex;
@@ -258,7 +237,7 @@ textarea {
      font-size: 1.125em;
 
    }
-   /*add a drop-shawdow filter to make them seem more like buttons?*/
+
 
    header nav ul {
      display: flex;
@@ -330,19 +309,9 @@ textarea {
 
    /*---------------MOBILE STYLES - HOMEPAGE----------------*/
 
-   /*.hero-area .content-wrapper {
-     width: 100%
-     display: flex;
-     justify-content:center;
-     align-items: center;
-     flex-flow: row wrap;
-     margin: 0;
-   }*/
 
    .hero-area {
      background-color: #80543b;
-     /*background-size: cover;*/
-     /*min-height: 598px;*/
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -352,10 +321,6 @@ textarea {
      margin: 30px 0;
    }
 
-   /*.hero-area figure {
-     background: url('../img/the-poet.jpg') center no-repeat #333;
-     background-size: cover;
-   }*/
 
    h1 {
      font-family: 'Cinzel Decorative', cursive;
@@ -370,59 +335,97 @@ textarea {
 
    /* ARTIST BIOGRAPHY */
 
-   aside {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+   .intro {
+     margin: 50px 0;
+   }
+
+   #bio {
+     background-color: #ffffff;
      color: #80543b;
+     padding: 30px 5% 50px 5%;
+     display: grid;
+   }
+
+   #bio i {
+     color: #80543b;
+     font-size: 2.5rem;
+     justify-self: end;
+     align-self: end;
+   }
+
+   #bio a {
+     color: #80543b;
+   }
+
+   aside {
+     background-color: #410802;
+     color: #e6b892;
+     margin: 5%;
+     padding: 5px;
+     border-radius: 8px;
+     text-align: center;
    }
 
    aside i {
-     color: #80543b;
-     font-size: 3em;
-   }
-
-   aside a {
-     color: #80543b;
+     font-size: 6rem;
    }
 
 
-
-      /* PAINTINGS-HIGHLIGHTS */
-
-      .paintings-highlights {
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-      /*  background-color: #af6237;*/
-      }
-
-      .paintings-highlights h2 {
-        margin-bottom: 40px;
-        line-height: 1;
-      }
-
-      .paintings-highlights i {
-        font-size: 3em;
-        padding-top: 20px;
-      }
+/* PAINTINGS HIGHLIGHTS */
 
 
-      .diptych {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-      }
+.paintings-highlights {
+  background-color: #af6237;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  padding-bottom: 50px;
+}
 
+.paintings-highlights img {
+  max-height: 85vh;
+}
 
+.paintings-highlights h2 {
+  grid-column-start: 2;
+  padding-top: 30px;
+}
 
-      /*--.reviews figure {
-        display: flex;
-        flex-flow: row wrap;
-      }
-      This code may be useful for larger size screen--*/
+.paintings-highlights article {
+  grid-column-start: 2;
+}
+
+.paintings-highlights .divider {
+  grid-column-start: 2;
+}
+
+.paintings-highlights h2 {
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.paintings-highlights i {
+  font-size: 3.25rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.paintings-highlights a {
+  color: #ffffff;
+}
+
+.diptych {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: stretch;
+  grid-column-gap: 2%;
+}
+
+.image-info {
+  display: grid;
+}
+
 
 
    /* FEATURES AREA */
@@ -681,6 +684,8 @@ textarea {
     margin:
   } */
 
+
+
   h1 {
     font-size: 2.8em;
     line-height: 1.4;
@@ -703,7 +708,7 @@ textarea {
     display: flex;
   }
 
-  .hero-area .intro {
+  .hero-area .name {
     flex: 1;
     padding-left: 10px;
   }
@@ -711,6 +716,46 @@ textarea {
   .hero-area figure {
     flex: 1;
   }
+
+    .intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+  }
+
+  #bio {
+    grid-column-start: 2;
+    padding: 50px 20%;
+  }
+
+  .intro aside {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 50px;
+    margin-left: 10%;
+  }
+
+  .paintings-highlights .vertical {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+  }
+  .paintings-highlights .vertical h4 {
+    padding: 0;
+  }
+
+  .image-info {
+    grid-column-start: 2;
+    align-items: start;
+  }
+
+  .vertical .image-info {
+    text-align: right;
+  }
+
+
 
   .features .features-items {
     width: 100%;
