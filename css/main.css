@@ -416,9 +416,10 @@ textarea {
 
 .diptych {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: 1fr;
   align-items: stretch;
+  justify-content: start;
   grid-column-gap: 2%;
 }
 
