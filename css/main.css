@@ -393,7 +393,7 @@ textarea {
      color: #80543b;
    }
 
-   aside {
+   .testimonial {
      background-color: #410802;
      color: #e6b892;
      margin: 5%;
@@ -402,7 +402,7 @@ textarea {
      text-align: center;
    }
 
-   aside i {
+   .testimonial i {
      font-size: 6rem;
    }
 
@@ -410,43 +410,48 @@ textarea {
 /* PAINTINGS HIGHLIGHTS */
 
 
-.paintings-highlights {
-  background-color: #af6237;
-  color: #ffffff;
+.paintings {
+/*  background-color: #af6237;
+  color: #ffffff; */
   display: grid;
   grid-template-columns: 5% 1fr 5%;
   padding-bottom: 50px;
 }
 
-.paintings-highlights img {
+.paintings img {
   max-height: 90vh;
 }
 
-.paintings-highlights h2 {
+.paintings h2 {
   grid-column-start: 2;
   padding-top: 30px;
 }
 
-.paintings-highlights article {
+.paintings article {
   grid-column-start: 2;
 }
 
-.paintings-highlights .divider {
+.paintings .divider {
   grid-column-start: 2;
 }
 
-.paintings-highlights h2 {
+.paintings h2 {
   margin-bottom: 40px;
   line-height: 1.4;
 }
 
-.paintings-highlights i {
+.paintings i {
   font-size: 3.25rem;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.paintings-highlights a {
+.highlights {
+  background-color: #af6237;
+  color: #ffffff;
+}
+
+.highlights a {
   color: #ffffff;
 }
 
@@ -461,6 +466,18 @@ textarea {
 
 .image-info {
   display: grid;
+}
+
+.past-shows {
+  background-color: #410802;
+  color: #e6b892;
+  padding: 40px 5px 60px 5px;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.past-shows h2 {
+  padding: 40px 0;
 }
 
 
@@ -508,7 +525,7 @@ textarea {
 
 
 /* ==========================================================================
-    PAINTING PAGE
+    PAINTINGS PAGE
 ========================================================================== */
 
    .hero-area .painting-logo {
@@ -525,6 +542,29 @@ textarea {
      padding-right: 10px
    }
 
+  #public {
+    color: #ffffff;
+    background-color: #80543b;
+  }
+
+
+  #corporate {
+    color: #e6b892;
+    background-color: #410802;
+  }
+
+  #corporate a {
+    color: #e6b892;
+  }
+
+  #private {
+    color: #410802;
+    background-color: #d99973; /*or e6b892?*/
+  }
+
+  #private a{
+    color: #410802
+  }
 
 /* ==========================================================================
     POETRY PAGE
@@ -799,12 +839,12 @@ textarea {
     margin-left: 10%;
   }
 
-  .paintings-highlights .vertical {
+  .paintings .vertical {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2%;
   }
-  .paintings-highlights .vertical h4 {
+  .paintings .vertical h4 {
     padding: 0;
   }
 
