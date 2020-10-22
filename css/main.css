@@ -175,6 +175,21 @@ textarea {
      background-color: #ffffff;
    }
 
+   .divider-beige {
+     width: 100%;
+     height: 1px;
+     margin: 40px 0 50px 0;
+     background-color: #e6b892;
+   }
+
+   .divider-blackbean {
+     width: 100%;
+     height: 1px;
+     margin: 40px 0 50px 0;
+     background-color: #410802;
+   }
+
+
    .right-small {
      justify-self: end;
      align-self: end;
@@ -431,7 +446,9 @@ textarea {
   grid-column-start: 2;
 }
 
-.paintings .divider {
+.paintings .divider,
+.divider-beige,
+.divider-blackbean {
   grid-column-start: 2;
 }
 
@@ -540,6 +557,23 @@ textarea {
      padding-bottom: 20px;
      padding-left: 10px;
      padding-right: 10px
+   }
+
+   .collections {
+     background-color: #ffffff;
+     color: #80543b;
+     padding: 30px 5% 50px 5%;
+     display: grid;
+   }
+
+   .collections i {
+       font-size: 3.25rem;
+       padding-top: 20px;
+       padding-bottom: 20px;
+   }
+
+   .collections a {
+     color: #80543b;
    }
 
   #public {
@@ -830,6 +864,7 @@ textarea {
     padding: 50px 20%;
   }
 
+
   .intro aside {
     grid-column-start: 1;
     grid-row-start: 1;
@@ -870,6 +905,13 @@ textarea {
   .features article {
     width: 95%;
     margin: 30px 0;
+  }
+
+/*Paintings Page*/
+
+  .collections {
+    grid-column-start: 2;
+    padding: 50px 20%;
   }
 
   /*Poetry Page*/
