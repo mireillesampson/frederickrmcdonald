@@ -148,7 +148,7 @@ textarea {
    }
 
    img {
-     /*max-height: 85vh;*/
+    /* max-height: 85vh; */
      max-width: 100%;
    }
 
@@ -417,6 +417,11 @@ textarea {
      text-align: center;
    }
 
+   .testimonial img {
+     clip-path: circle(50% at 50% 50%);
+     margin-top: 30px;
+   }
+
    .testimonial i {
      font-size: 6rem;
    }
@@ -434,7 +439,7 @@ textarea {
 }
 
 .paintings img {
-  max-height: 90vh;
+  max-height: 85vh;
 }
 
 .paintings h2 {
@@ -481,6 +486,10 @@ textarea {
   grid-column-gap: 2%;
 }
 
+.wide-diptych {
+
+}
+
 .image-info {
   display: grid;
 }
@@ -516,7 +525,7 @@ textarea {
    }
 
    .features article {
-     width: 100%;
+     width: 90%;
      margin: 30px 0;
    }
 
@@ -575,6 +584,21 @@ textarea {
    .collections a {
      color: #80543b;
    }
+
+   .narrow-diptych {
+     display: grid;
+     grid-template-columns: auto auto;
+     grid-template-rows: auto;
+     align-items: stretch;
+     grid-column-gap: 2%;
+     justify-content: space-between;
+   }
+
+   .narrow-diptych .image-info {
+     grid-column: span 2;
+     align-items: start;
+   }
+
 
   #public {
     color: #ffffff;
@@ -644,6 +668,7 @@ textarea {
 #books {
   background-color: #d99973;
   color: #410802;
+  padding: 50px 5%;
 }
 
 #books a {
@@ -669,8 +694,22 @@ textarea {
   margin-bottom: 40px;
 }
 
+#books h3 {
+  margin-top: 40px;
+}
+
+#books img {
+  max-height: 85vh;
+}
+
 #books .divider {
   background-color: #410802;
+}
+
+.poems h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #80543b;
+  padding: 30px 0 0 2.5%;
 }
 
 .poems h3 {
@@ -816,8 +855,6 @@ textarea {
     margin:
   } */
 
-
-
   h1 {
     font-size: 2.8em;
     line-height: 1.4;
@@ -832,6 +869,38 @@ textarea {
     font-size: 1.5em;
     line-height: 1.25;
   }
+
+
+    footer .content-wrapper {
+      width: 65%;
+      margin: 100px 0;
+    }
+
+    footer .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    footer .contact {
+      margin-bottom: 0;
+    }
+
+    footer .copyright {
+      font-size: 1em;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    footer p {
+      line-height: 1.285;
+    }
+
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-around;
+    }
 
 
   /*Homepage Features*/
@@ -903,7 +972,7 @@ textarea {
   }
 
   .features article {
-    width: 95%;
+    width: 80%;
     margin: 30px 0;
   }
 
@@ -914,18 +983,100 @@ textarea {
     padding: 50px 20%;
   }
 
+  .narrow-diptych {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: 1fr auto;
+    align-items: stretch;
+    justify-content: start;
+    grid-column-gap: 2%;
+  }
+
+  .narrow-diptych .image-info {
+    grid-row-start: 1;
+    grid-column-start: 3;
+    align-items: start;
+    text-align: right;
+  }
+
+
   /*Poetry Page*/
+
+  #books {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 5%;
+  }
+
+  #books h2 {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+
+  #books img {
+    grid-column-start: 2;
+    grid-row: 2;
+  }
+
+  #book-details {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+
+  #books h3 {
+    grid-column: 2 / span 2;
+    grid-row-start: 3;
+  }
+
+  #review-one {
+    grid-column-start: 2;
+    grid-row-start: 4;
+  }
+
+  #review-two {
+    grid-column-start: 3;
+    grid-row-start: 4;
+  }
+
+  #books .divider {
+    grid-row-start: 5;
+
+  }
+
+  #mythical {
+    grid-row-start: 6;
+    grid-column-start: 2;
+  }
 
 
 }
 /* ==========================================================================
     DESKTOP STYLES
   ========================================================================== */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   /*General Styles*/
 
   .map figure {
     padding-bottom: 37.5%;
+  }
+
+  #t-o-contents .content-wrapper,
+  .poems .content-wrapper {
+    max-width: 850px;
+  }
+
+  .features h2 {
+    width: 100%;
+  }
+
+/*  .features article {
+    flex-basis: 33%;
+  }
+*/
+  .features i {
+    font-size: 4.5em;
   }
 }
 
@@ -1019,14 +1170,13 @@ textarea {
 
 /*===========TABLET STYLES=====================*/
 
+/*======
 @media only screen and (min-width: 768px) {
-  /*General Styles*/
+
   .content-wrapper {
     max-width: 718px;
     margin: 100px 0;
   }
-
-  /*Features*/
 
   .features h2 {
     margin-bottom: 20px;
@@ -1048,45 +1198,18 @@ textarea {
     margin-bottom: 30px;
   }
 
-  /*Footer*/
-  footer .content-wrapper {
-    width: 65%;
-    margin: 100px 0;
-  }
 
-  footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-
-  footer .contact {
-    margin-bottom: 0;
-  }
-
-  footer .copyright {
-    font-size: 1em;
-    margin-bottom: 40px;
-    width: 100%;
-  }
-
-  footer p {
-    line-height: 1.285;
-  }
-
-  footer .social-icons {
-    width: 12.5em;
-    justify-content: space-between;
-  }
 
 }
+
+=====*/
 
 /*==========DESKTOP STYLES=======================*/
 
 @media only screen and (min-width: 1200px) {
 
-  /*General Styles*/
+/*====
+
   .content-wrapper {
     max-width: 1024px;
   }
@@ -1103,6 +1226,7 @@ textarea {
     font-size: 4.5em;
   }
 }
+=====*/
 
 
 
