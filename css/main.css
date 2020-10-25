@@ -419,11 +419,12 @@ textarea {
 
    .testimonial img {
      clip-path: circle(50% at 50% 50%);
-     margin-top: 30px;
+     margin-top: 20px;
+     margin-bottom: 30px;
    }
 
-   .testimonial i {
-     font-size: 6rem;
+   .testimonial a {
+     color: inherit;
    }
 
 
@@ -484,10 +485,6 @@ textarea {
   align-items: stretch;
   justify-content: start;
   grid-column-gap: 2%;
-}
-
-.wide-diptych {
-
 }
 
 .image-info {
@@ -603,12 +600,14 @@ textarea {
   #public {
     color: #ffffff;
     background-color: #80543b;
+    padding: 20px 0;
   }
 
 
   #corporate {
     color: #e6b892;
     background-color: #410802;
+    padding: 20px 0;
   }
 
   #corporate a {
@@ -618,6 +617,7 @@ textarea {
   #private {
     color: #410802;
     background-color: #d99973; /*or e6b892?*/
+    padding: 20px 0;
   }
 
   #private a{
@@ -644,8 +644,6 @@ textarea {
 }
 
 
-
-
 #t-o-contents {
   color: #80543B;
   background-color: #ffffff;
@@ -663,6 +661,10 @@ textarea {
   color: #80543B;
   line-height: 2.5;
   padding-left: 10px;
+}
+
+#t-o-contents ul li a:hover {
+  color: powderblue;
 }
 
 #books {
@@ -716,6 +718,7 @@ textarea {
   font-family: 'Cinzel Decorative', cursive;
 }
 
+
 #two-ravens {
   color: #80543b;
   background-color: #ffffff;
@@ -727,7 +730,10 @@ textarea {
 #two-ravens i {
   color: #80543b;
   font-size: 2em;
+}
 
+#two-ravens i:hover {
+  color:powderblue;
 }
 
 #names {
@@ -745,6 +751,10 @@ textarea {
   font-size: 2em;
 }
 
+#names i:hover {
+  color:powderblue;
+}
+
 #best {
   color: #80543b;
   background-color: #ffffff;
@@ -752,10 +762,16 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
 #best i {
   color: #80543b;
   font-size: 2em;
 }
+
+#best i:hover {
+    color:powderblue;
+  }
+
 
 #kitchen {
   background-color: #80543b;
@@ -768,6 +784,10 @@ textarea {
 #kitchen i {
   color: #ffffff;
   font-size: 2em;
+}
+
+#kitchen i:hover {
+  color:powderblue;
 }
 
 #jelly-jar {
@@ -783,6 +803,10 @@ textarea {
   font-size: 2em;
 }
 
+#jelly-jar i:hover {
+  color:powderblue;
+}
+
 #darkness {
   background-color: #af6237;
   color: #ffffff;
@@ -794,6 +818,10 @@ textarea {
 #darkness i{
   color: #ffffff;
   font-size: 2em;
+}
+
+#darkness i:hover {
+  color:powderblue;
 }
 
 #next-door {
@@ -809,6 +837,10 @@ textarea {
   font-size: 2em;
 }
 
+#next-door i:hover {
+  color:powderblue;
+}
+
 #lights {
   color: #e6b892;
   background-color: #410802;
@@ -820,6 +852,10 @@ textarea {
 #lights i {
   color: #e6b892;
   font-size: 2em;
+}
+
+#lights i:hover {
+  color:powderblue;
 }
 
 #request {
@@ -835,13 +871,9 @@ textarea {
   font-size: 2em;
 }
 
-/*   .poetry article {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
-     color: #80543b;
-   } */
+#request i:hover {
+  color:powderblue;
+}
 
 
 /* ==========================================================================
@@ -943,6 +975,12 @@ textarea {
     margin-left: 10%;
   }
 
+  .paintings i {
+    font-size: 4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .paintings .vertical {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -962,13 +1000,13 @@ textarea {
   }
 
 
-
   .features .features-items {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     align-items: start;
+    justify-items: center;
   }
 
   .features article {
@@ -999,57 +1037,29 @@ textarea {
     text-align: right;
   }
 
+  #public {
+    padding: 50px 0;
+  }
+
+  #corporate {
+    padding: 50px 0;
+  }
+
+  #private {
+    padding: 50px 0;
+  }
+
 
   /*Poetry Page*/
 
-  #books {
-    padding: 0;
-    display: grid;
-    grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-gap: 5%;
-  }
-
-  #books h2 {
-    grid-column: 2 / span 2;
-    grid-row: 1;
-  }
-
   #books img {
-    grid-column-start: 2;
-    grid-row: 2;
+    max-height: 50vh;
   }
 
-  #book-details {
-    grid-column-start: 3;
-    grid-row-start: 2;
+  #t-o-contents .content-wrapper,
+  .poems .content-wrapper {
+    max-width: 850px;
   }
-
-  #books h3 {
-    grid-column: 2 / span 2;
-    grid-row-start: 3;
-  }
-
-  #review-one {
-    grid-column-start: 2;
-    grid-row-start: 4;
-  }
-
-  #review-two {
-    grid-column-start: 3;
-    grid-row-start: 4;
-  }
-
-  #books .divider {
-    grid-row-start: 5;
-
-  }
-
-  #mythical {
-    grid-row-start: 6;
-    grid-column-start: 2;
-  }
-
 
 }
 /* ==========================================================================
@@ -1062,11 +1072,6 @@ textarea {
     padding-bottom: 37.5%;
   }
 
-  #t-o-contents .content-wrapper,
-  .poems .content-wrapper {
-    max-width: 850px;
-  }
-
   .features h2 {
     width: 100%;
   }
@@ -1077,6 +1082,11 @@ textarea {
 */
   .features i {
     font-size: 4.5em;
+  }
+
+  #t-o-contents .content-wrapper,
+  .poems .content-wrapper {
+    max-width: 850px;
   }
 }
 
