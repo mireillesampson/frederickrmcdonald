@@ -294,6 +294,7 @@ textarea {
      display: flex;
      justify-content: space-around;
      align-items: center;
+     margin-top: 20px;
    }
 
    footer .social-icons p {
@@ -909,7 +910,7 @@ textarea {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-direction: row;
+      flex-direction: column;
     }
 
     footer .contact {
